@@ -81,3 +81,11 @@ We used Python-Tesseract, which is a wrapper for Google's Tesseract-OCR Engine. 
 - Associating Broken Characters
 
 ## Face Detection
+We used two libraries for face detection and recognition.
+
+1. dlib
+2. face_recognition
+
+The dlib library, maintained by Davis King, contains our implementation of “deep metric learning” which is used to construct our face embeddings used for the actual recognition process.
+
+The face_recognition  library, created by Adam Geitgey, wraps around dlib’s facial recognition functionality, making it easier to work with.
