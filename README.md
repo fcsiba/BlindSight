@@ -89,3 +89,107 @@ We used two libraries for face detection and recognition.
 The dlib library, maintained by Davis King, contains our implementation of “deep metric learning” which is used to construct our face embeddings used for the actual recognition process.
 
 The face_recognition  library, created by Adam Geitgey, wraps around dlib’s facial recognition functionality, making it easier to work with.
+
+
+# Installation
+* Python 3.6.8 |Anaconda custom (64-bit)
+* GCC 4.2.1 Compatible Clang 4.0.1
+    
+We used Mac OS X to run our project. You must have conda installed in order to start the installation. To know more about installing Conda, visit this [link](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
+
+Once conda is installed, run the following code,
+
+    conda create -n retinanet python=3.6 anaconda
+    
+It will install Python3.6 and all the required packages for retinanet. Next, activate the virtual environment you just created.
+    
+    source activate retinanet
+    
+The following imported libraries were used in this project. You can use pip to manually install each library on your PC,
+
+    import re   
+    from bs4 import BeautifulSoup
+    import requests
+    from sys import byteorder
+    from array import array
+    from struct import pack
+    import pyaudio
+    import wave
+    from gtts import gTTS 
+    from pygame import mixer # Load the required library
+    import threading
+    from imageai.Detection import ObjectDetection
+    import os
+    import collections
+    from PIL import Image
+    import pytesseract
+    import argparse
+    import cv2
+    import os
+    from __main__ import *
+    import face_recognition
+    import argparse
+    import pickle
+    import cv2
+    import sys
+    from gtts import gTTS 
+    import urllib.request
+    import requests
+    import base64
+    try:
+        from PIL import Image
+    except ImportError:
+        import Image
+    import pytesseract
+    import base64
+    import requests
+    import cv2
+    import numpy as np
+    from keras.models import load_model
+    import sys
+    import warnings
+    import tensorflow as tf
+    from keras.backend.tensorflow_backend import set_session
+    from pydub import AudioSegment
+    from pydub.playback import play
+    from imutils import paths
+    import face_recognition
+    import argparse
+    import pickle
+    import cv2
+    import os
+    import shutil
+    
+Once installed, you need to download the two models we used,
+* RetinaNet for ObjectDetection - Place it inside the **BlindSight/** folder as 'resnet50_coco_best_v2.0.1.h5' | [Download Now](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5)
+* Emotion Recognition - Place it inside the **face-recognition-opencv/** folder as 'model_5-49-0.62.hdf5'
+
+Once stored, you can run BlindSight.py file to start the code. Face Detection requires a model (needs stored faces) - you will need to use the BlindSight.py's 'save' command to record and save faces.
+
+After that, use encode_faces.py to create a model and place it in the **face-recognition-opencv/** folder as 'encodings.pickle' using Python's pickle library.
+
+Now, your code is capable of recognizing the stored faces. You can store more faces for better recognition.
+
+Commands Implemented
+* Object Recognition
+* Face Recognition + Emotions Detection
+* Text Recognition
+* Recording Notes (Voice to Text and vice versa)
+* Reading Headlines
+        
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
