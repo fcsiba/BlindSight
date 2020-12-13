@@ -11,9 +11,7 @@ On the server, the Python script receives this picture and uses Artificial Intel
 
  
 
-### Client - Side : Android Application
 
-The Android Application is a custom-built camera app, built using Android's camera 2 api. It is lightweight and robust and designed intuituvely to be helpful for a visually-impaired person.
 
 __**Input**__ : User inputs a touch interaction by touching on the screen or clicking the volume button.
 
