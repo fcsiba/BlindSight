@@ -1,6 +1,6 @@
 # BlindSight
 
-BlindSight is an Android Application, powered by Python algorithms working on the Server's backend, to help the visually impaired in their daily lives.
+BlindSight is a Python application to help the visually impaired in their daily lives.
 
 Primarily, it has two parts,
  - An Android Application
